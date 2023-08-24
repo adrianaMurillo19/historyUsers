@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mostrar Array en HTML</title>
+</head>
+<body>
+
+	<ul id="miLista"></ul>
+
+	<script>
+		var miArray = ["elemento1", "elemento2", "elemento3"];
+
+		for (var i = 0; i < miArray.length; i++) {
+			var li = document.createElement("li");
+			var texto = document.createTextNode(miArray[i]);
+			li.appendChild(texto);
+			document.getElementById("miLista").appendChild(li);
+		}
+	</script>
+
+</body>
+</html>
